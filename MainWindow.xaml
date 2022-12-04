@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PR9"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="WPF_PR9.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="250,10,10,45"/>
+        <GroupBox x:Name="groupBox" Header="Ввод данных" Margin="10,10,0,0" HorizontalAlignment="Left" Width="235" Height="379" VerticalAlignment="Top">
+            <Grid>
+                <Button x:Name="buttonCreate" Content="Записать" HorizontalAlignment="Left" Margin="10,307,0,0" VerticalAlignment="Top" FontSize="14" Width="80" Height="30" Click="ButtonCreate_Click"/>
+                <Button x:Name="button_Copy" Content="Удалить" HorizontalAlignment="Left" Margin="95,307,0,0" VerticalAlignment="Top" FontSize="14" Width="80" Height="30"/>
+                <Label x:Name="label" Content="ФИО:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="53"/>
+                <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30" VerticalContentAlignment="Center"/>
+                <Label x:Name="label_Copy" Content="Пол:" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="53"/>
+                <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="100" Height="30" FontSize="14"/>
+                <Label x:Name="label_Copy1" Content="Год рождения:" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="10,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="30" VerticalContentAlignment="Center"/>
+                <Label x:Name="label_Copy2" Content="Место рождения:" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Width="149"/>
+                <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Margin="10,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30" VerticalContentAlignment="Center"/>
+                <Label x:Name="label_Copy3" Content="Национальность:" HorizontalAlignment="Left" Margin="11,238,0,0" VerticalAlignment="Top" Width="149"/>
+                <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Margin="11,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30" VerticalContentAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
